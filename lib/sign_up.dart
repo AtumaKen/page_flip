@@ -9,9 +9,9 @@ class SignUp extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          BottomFlipIconButton(onFlip: onFlip,),
           textFields("email")!, textFields("password")!,
-          textFields("Confirm Password")!],
+          textFields("Confirm Password")!,
+          BottomFlipIconButton(onFlip: onFlip,),],
       ),
     );
   }

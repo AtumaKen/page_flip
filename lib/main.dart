@@ -42,9 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
       body: PageFlipBuilder(
           key: pageBuilderKey,
           frontBuilder: (_) =>
-              SignUp(onFlip: pageBuilderKey.currentState?.flip()),
+              SignUp(onFlip: () => pageBuilderKey.currentState?.flip()),
           backBuilder: (_) =>
-              SignIn(onFlip: pageBuilderKey.currentState?.flip())),
+              SignIn(onFlip: () => pageBuilderKey.currentState?.flip())),
     );
   }
 }
